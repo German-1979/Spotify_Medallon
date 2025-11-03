@@ -9,8 +9,8 @@ Polars es una librería de procesamiento de datos en columnas escrita en Rust y 
 
 En palabras simples: 
 
-🧩 Polars → equivalente local a Spark (procesamiento en memoria, tipo DataFrame).
-📦 PyArrow → equivalente base a Delta/Parquet (manejo de formato columnares, interoperabilidad).
+- 🧩 Polars → equivalente local a Spark (procesamiento en memoria, tipo DataFrame).
+- 📦 PyArrow → equivalente base a Delta/Parquet (manejo de formato columnares, interoperabilidad).
 
 A través de este flujo se busca:
 
@@ -41,14 +41,15 @@ Las variables, significado y tipo de datos, lo vemos en la siguiente tabla:
 | `time_signature`   | Número de tiempos por compás.                                                                      | Integer (3,4,5…) |
 | `valence`          | Positividad de la música; 1 = muy alegre/feliz, 0 = triste/negativa.                               | Float 0-1        |
 
-obs: Posteriormente la variable "duration_ms" fue transformada a segundos para una mejor interpretación
+
+Obs: Posteriormente la variable "duration_ms" fue transformada a segundos para una mejor interpretación
 
 
 ---
 
 ## 🧱 Estructura del Proyecto
 
-![alt text](estructura_proyecto-1.png)
+![Estructura del Proyecto](./estructura_proyecto.png)
 
 ---
 
