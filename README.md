@@ -3,7 +3,15 @@
 
 ## 🚀 Objetivo del Proyecto
 
-El propósito de este proyecto es construir un **pipeline ETL automatizado** siguiendo una **arquitectura medallón (Bronze → Silver → Gold)** para analizar datos musicales de **Spotify**.  
+El propósito de este proyecto es construir un **pipeline ETL automatizado** siguiendo una **arquitectura medallón (Bronze → Silver → Gold)** para analizar datos musicales de **Spotify**, mediante las librerías Polars y PyArrow.
+
+Polars es una librería de procesamiento de datos en columnas escrita en Rust y con API para Python, R y Node.js. Está diseñada para trabajar con datasets grandes y operaciones paralelas, aprovechando multithreading y vectorización nativa. Mientras que Pyarrow es una librería de bajo nivel que implementa el formato Apache Arrow, un estándar para representar datos en columnas en memoria (columnar memory format).
+
+En palabras simples: 
+
+🧩 Polars → equivalente local a Spark (procesamiento en memoria, tipo DataFrame).
+📦 PyArrow → equivalente base a Delta/Parquet (manejo de formato columnares, interoperabilidad).
+
 A través de este flujo se busca:
 
 - Ingerir, transformar y limpiar datos de canciones, artistas y géneros.  
