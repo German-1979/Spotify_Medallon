@@ -10,6 +10,31 @@ A través de este flujo se busca:
 - Generar tablas analíticas optimizadas en la capa **Gold**.  
 - Visualizar métricas clave mediante dashboards interactivos y reportes.
 
+Las variables, significado y tipo de datos, lo vemos en la siguiente tabla:
+
+| Campo              | Significado                                                                                        | Unidad / Rango   |
+| ------------------ | -------------------------------------------------------------------------------------------------- | ---------------- |
+| `genre`            | Género musical de la canción.                                                                      | Texto (string)   |
+| `artist_name`      | Nombre del artista o banda.                                                                        | Texto (string)   |
+| `track_name`       | Nombre de la canción.                                                                              | Texto (string)   |
+| `track_id`         | Identificador único de la canción en Spotify.                                                      | Texto (string)   |
+| `popularity`       | Popularidad de la canción en Spotify. Va de 0 a 100, donde 100 es muy popular.                     | Entero 0-100     |
+| `acousticness`     | Probabilidad de que la canción sea acústica. 1 = completamente acústica.                           | Float 0-1        |
+| `danceability`     | Qué tan bailable es la canción según ritmo, tempo, beat, etc. 1 = muy bailable.                    | Float 0-1        |
+| `duration_ms`      | Duración de la canción en **milisegundos**.                                                        | Integer (ms)     |
+| `energy`           | Nivel de intensidad y actividad de la canción. 1 = muy energético.                                 | Float 0-1        |
+| `instrumentalness` | Probabilidad de que la canción sea instrumental (sin voces). 1 = totalmente instrumental.          | Float 0-1        |
+| `key`              | Tono musical de la canción según el estándar de 0 a 11 (C=0, C#=1, …, B=11).                       | Integer 0-11     |
+| `liveness`         | Probabilidad de que la pista haya sido grabada en vivo. Valores altos = más “en vivo”.             | Float 0-1        |
+| `loudness`         | Volumen promedio de la canción en decibeles (dB). Valores negativos (más cerca de 0 = más fuerte). | Float dB         |
+| `mode`             | Modo de la canción: 1 = mayor, 0 = menor.                                                          | Integer 0/1      |
+| `speechiness`      | Cuánto de la canción es voz hablada (rap, spoken word, etc.). Valores altos = más hablado.         | Float 0-1        |
+| `tempo`            | Tempo de la canción en **pulsos por minuto (BPM)**.                                                | Float BPM        |
+| `time_signature`   | Número de tiempos por compás.                                                                      | Integer (3,4,5…) |
+| `valence`          | Positividad de la música; 1 = muy alegre/feliz, 0 = triste/negativa.                               | Float 0-1        |
+
+obs: Posteriormente la variable "duration_ms" fue transformada a segundos para una mejor interpretación
+
 
 ---
 
