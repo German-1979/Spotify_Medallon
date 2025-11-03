@@ -49,15 +49,17 @@ Los resultados procesados se almacenan automáticamente en `data/gold/`.
 
 Puedes revisar los resultados de la capa Gold directamente desde la terminal ejecutando:
 
-   python show_table_gold.py
+   - `python show_table_gold.py`
 
 
 👉 Este script lee los archivos .parquet generados en la carpeta data/gold/ y muestra en consola los primeros registros de:
 
-   artist_features.parquet
-   genre_popularity.parquet
+   - `artist_features.parque`
+   - `genre_popularity.parquet`
+
 
 ![Popularidad por género](./data/gold/popularidad_por_genero.png)
+
 
 ![Promedio de características por artista](./data/gold/promedio_caracteristicas_por_artista.png)
 
@@ -69,7 +71,7 @@ Puedes revisar los resultados de la capa Gold directamente desde la terminal eje
 El archivo spotify_dashboard.py permite explorar visualmente los resultados combinados de las capas Silver y Gold.
 Para ejecutarlo:
 
-   streamlit run spotify_dashboard.py
+   - `streamlit run spotify_dashboard.py`
 
 
 Esto abrirá un localhost (por defecto en http://localhost:8501) con los siguientes gráficos:
@@ -92,9 +94,9 @@ Cada gráfico incluye una breve conclusión automática
 
 En tu terminal o consola de VSCode, ejecuta:
 
-git clone https://github.com/<tu_usuario>/<tu_repositorio>.git en:
+   - `git clone https://github.com/<tu_usuario>/<tu_repositorio>.git` en:
 
-   cd Spotify_Medallon
+   - `cd Spotify_Medallon`
 
 (Reemplaza <tu_usuario> y <tu_repositorio> por tu nombre y repo reales).
 
@@ -105,15 +107,14 @@ git clone https://github.com/<tu_usuario>/<tu_repositorio>.git en:
 
 En Windows (PowerShell)
 
-Crea el entorno virtual: python -m venv venv
-Y luego actívalo con: venv\Scripts\activate
+Crea el entorno virtual: `python -m venv venv`, y luego actívalo con: `venv\Scripts\activate`
 
 ---
 
 
 ### 3️⃣ Instalar dependencias
 
-   pip install -r requirements.txt
+   - `pip install -r requirements.txt`
 
 ---
 
@@ -122,11 +123,11 @@ Y luego actívalo con: venv\Scripts\activate
 
 Ejecuta en VSC:
 
-   jupyter notebook notebooks/etl_pipeline.ipynb
+   - `jupyter notebook notebooks/etl_pipeline.ipynb`
 
 O, si prefieres ver el flujo completo y depurarlo paso a paso:
 
-   jupyter notebook notebooks/etl_pipeline.ipynb
+   - `jupyter notebook notebooks/etl_pipeline.ipynb`
 
 ---
 
@@ -135,11 +136,12 @@ O, si prefieres ver el flujo completo y depurarlo paso a paso:
 
 Ver tablas Gold en consola:
 
-   python show_table_gold.py
+   - `python show_table_gold.py`
 
 Abrir dashboard interactivo:
 
-   streamlit run spotify_dashboard.py
+   - `streamlit run spotify_dashboard.py`
+   
 
 ![Gráficos Streamlit](./data/gold/gráficos_streamlit.png)
 
